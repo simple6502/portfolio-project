@@ -12,6 +12,19 @@
             color: #FFFFFF;
             overflow-y: auto;
         }
+
+        a:link {
+            color: rgb(130, 220, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: rgb(130, 220, 255);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
         main {
             padding: 120px 20px 20px 20px;
             position: relative;
@@ -68,15 +81,7 @@
             text-align: center;
             animation: fadeIn 1s ease-in-out;
         }
-       .code-page a {
-            color: #1E90FF;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-       .code-page a:hover {
-            color: #00BFFF;
-        }
+
        .background {
             position: fixed;
             top: 0;
@@ -138,7 +143,8 @@
         <section id="about" class="about-me container">
             <img src="./images/profile.jpg" alt="Nathan Beaudoin">
             <h1>Hello! I'm Nathan Beaudoin</h1>
-            <p>I am a student at Tiverton High School who took Graphic Art & Design my senior year. Here are my most proud creations!</p>
+            <p>I am a student at Tiverton High School who took Graphic Art & Design my senior year. Here are my most proud creations from that year!</p>
+            <p>You can contact me at <a href="mailto:nathan.beau@proton.me">nathan.beau@proton.me</a></p>
         </section>
 
         <section class="gallery-section container">
@@ -203,7 +209,7 @@
 
         <section id="code" class="code-page container">
             <h2>Code</h2>
-            <p>Check out the code for this site on <a href="https://github.com/simple6502/portfolio-project" target="_blank">GitHub</a></p>
+            <p>Check out the code for this site on <a href="https://github.com/simple6502/portfolio-project">GitHub</a></p>
         </section>
     </main>
 
