@@ -1,4 +1,4 @@
 # Portfolio for Graphic Art & Design Class
 A portfolio site for high school graphic art &amp; design class
 
-![preview](./images/site_preview.PNG)
+![preview](./images/site_preview.png)
