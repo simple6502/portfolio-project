@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #FFFFFF;
+            overflow-y: auto;
+        }
+        main {
+            padding: 120px 20px 20px 20px;
+            position: relative;
+            z-index: 1;
+        }
+       .container {
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeIn 1s ease-in-out;
+            padding: 20px 0;
+        }
+       .about-me {
+            text-align: center;
+            animation: slideInFromLeft 1s ease-in-out;
+            margin-bottom: 40px;
+        }
+       .about-me img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+        }
+       .about-me img:hover {
+            transform: scale(1.1);
+        }
+       .gallery-section {
+            margin-bottom: 40px;
+        }
+       .gallery-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+       .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            animation: slideInFromRight 1s ease-in-out;
+        }
+       .gallery a {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+       .gallery a:hover {
+            transform: scale(1.05);
+        }
+       .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+       .code-page {
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+       .code-page a {
+            color: #1E90FF;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+       .code-page a:hover {
+            color: #00BFFF;
+        }
+       .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 0;
+            background: linear-gradient(324deg, #3509d3, #e68508);
+            background-size: 200% 200%;
+            animation: AnimationName 20s ease infinite;
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 2%}
+            50%{background-position:100% 99%}
+            100%{background-position:0% 2%}
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 1000px) {
+           .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 800px) {
+           .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <main>
+        <section id="about" class="about-me container">
+            <img src="./images/profile.jpg" alt="Nathan Beaudoin">
+            <h1>Hello! I'm Nathan Beaudoin</h1>
+            <p>I am a student at Tiverton High School who took Graphic Art & Design my senior year. Here are my most proud creations!</p>
+        </section>
+
+        <section class="gallery-section container">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="./images/movie.png" target="_blank">
+                    <img src="./images/movie_lowres.png" alt="movie poster">
+                </a>
+                <a href="./images/flier.png" target="_blank">
+                    <img src="./images/flier_lowres.png" alt="flier">
+                </a>
+                <a href="./images/whispy_world.png" target="_blank">
+                    <img src="./images/whispy_world_lowres.png" alt="whispy world">
+                </a>
+                <a href="./images/demon.png" target="_blank">
+                    <img src="./images/demon_lowres.png" alt="demon">
+                </a>
+                <a href="./images/mockup.png" target="_blank">
+                    <img src="./images/mockup_lowres.png" alt="mockup">
+                </a>
+                <a href="./images/mrbeast.png" target="_blank">
+                    <img src="./images/mrbeast.png" alt="mrbeast">
+                </a>
+                <a href="./images/fox.png" target="_blank">
+                    <img src="./images/fox_lowres.png" alt="fox">
+                </a>
+                <a href="./images/moon.png" target="_blank">
+                    <img src="./images/moon_lowres.png" alt="moon">
+                </a>
+                <a href="./images/cafe.png" target="_blank">
+                    <img src="./images/cafe_lowres.png" alt="cafe">
+                </a>
+                <a href="./images/mural.png" target="_blank">
+                    <img src="./images/mural_lowres.png" alt="mural">
+                </a>
+                <a href="./images/hybrid.png" target="_blank">
+                    <img src="./images/hybrid.png" alt="hybrid">
+                </a>
+                <a href="./images/combine.png" target="_blank">
+                    <img src="./images/combine.png" alt="combine">
+                </a>
+                <a href="./images/bumper_stickers.png" target="_blank">
+                    <img src="./images/bumper_stickers_lowres.png" alt="bumper stickers">
+                </a>
+                <a href="./images/cabin.png" target="_blank">
+                    <img src="./images/cabin.png" alt="cabin">
+                </a>
+                <a href="./images/cat.png" target="_blank">
+                    <img src="./images/cat.png" alt="cat">
+                </a>
+                <a href="./images/cards.png" target="_blank">
+                    <img src="./images/cards.png" alt="cards">
+                </a>
+                <a href="./images/kaleidoscope.png" target="_blank">
+                    <img src="./images/kaleidoscope.png" alt="kaleidoscope">
+                </a>
+                <a href="./images/bicar.png" target="_blank">
+                    <img src="./images/bicar.png" alt="bicar">
+                </a>
+            </div>
+        </section>
+
+        <section id="code" class="code-page container">
+            <h2>Code</h2>
+            <p>Check out the code for this site on <a href="https://github.com/simple6502/portfolio-project" target="_blank">GitHub</a></p>
+        </section>
+    </main>
+
+</body>
+</html>
